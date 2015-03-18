@@ -1878,6 +1878,8 @@ if [ "x$SHELL" != "x/bin/bash" ]; then
     esac
 fi
 
+export USE_PREBUILT_CHROMIUM=1
+
 # Execute the contents of any vendorsetup.sh files we can find.
 for f in `test -d device && find -L device -maxdepth 4 -name 'vendorsetup.sh' 2> /dev/null` \
          `test -d vendor && find -L vendor -maxdepth 4 -name 'vendorsetup.sh' 2> /dev/null`
